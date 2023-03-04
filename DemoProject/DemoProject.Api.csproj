@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DemoProject.Application\DemoProject.Application.csproj" />
+    <ProjectReference Include="..\DemoProject.Domain\DemoProject.Domain.csproj" />
+    <ProjectReference Include="..\DemoProject.Entities\DemoProject.Entities.csproj" />
+    <ProjectReference Include="..\DemoProject.Infrastructure\DemoProject.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
